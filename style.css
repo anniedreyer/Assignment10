@@ -1,0 +1,176 @@
+body {
+	background-image: url("images/project1_backgroundimage.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+h1 {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+h2 {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+p {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.slideshow-container {
+	position: absolute;
+	top: 18%;
+	left: 5%;
+	width: 90%;
+  	height: 90%;
+/*  	display: none;
+*/  overflow: hidden;
+}
+
+.slides {
+/*    display: none;
+*/  position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 525px;
+    transition: .3s;
+}
+
+.big-left{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:60%;
+	height:100%;
+}
+
+.big-topright {
+	position: absolute;
+	width: 40%;
+	height: 50%;
+	top: 0px;
+	right: 0px;
+}
+
+.idk {
+	position: absolute;
+	background: grey;
+	opacity: .8;
+	width: 20%;
+	height: 13%;
+	bottom: 195px;
+	right: 231px;
+	animation-name: colorChange;
+	animation-iteration-count: 1;
+	animation-duration: 4s;
+}
+
+.idk:hover {
+	background: #D6F0E9;
+	opacity: 1;
+	transition: 1s;
+}
+
+@keyframes colorChange {
+	0% {
+		background-color: grey;
+	}
+	50% {
+		background-color: #D6F0E9;
+	}
+	100% {
+		background-color: grey;
+	}
+}
+
+
+.beneath {
+	position: absolute;
+	width: 20%;
+	height: 38%;
+	bottom: 0px;
+	right: 231px;
+}
+
+.lower-right {
+	position: absolute;
+	width: 21%;
+	height: 50.2%;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.dots {
+	text-align: center;
+	padding-top: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+ 	background-color: white;
+}
+
+/* Caption text */
+.text {
+ 	color: #f2f2f2;
+ 	font-size: 15px;
+ 	padding: 8px 12px;
+ 	position: absolute;
+ 	bottom: 8px;
+ 	width: 100%;
+ 	text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+ 	height: 15px;
+ 	width: 15px;
+ 	margin: 0 2px;
+  	background-color: white;
+  	outline: solid 2px black;
+  	display: inline-block;
+ 	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: grey ;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from { 
+  	opacity: .4
+  } 
+  to {
+  	opacity: 1
+  }
+}

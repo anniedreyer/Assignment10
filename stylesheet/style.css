@@ -1,0 +1,4 @@
+body #background {
+background: url("img/project1_backgroundimage.jpeg") no-repeat 50% 50% fixed;
+background-size: cover;
+}
